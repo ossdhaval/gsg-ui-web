@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public static getWishlistByIdUrl: string = "https://172.17.0.1:8443/api/event/c1413b13-7902-46f8-941d-b2e4a307fa55";
+  public static getWishlistByIdUrl: string = "http://172.17.0.1:8080/api/event/";
   title = 'gsg-ui-web';
 }

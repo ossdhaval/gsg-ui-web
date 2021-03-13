@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MyWishlistService } from './mywishlist.service';
 
 @Component({
   selector: 'mywishlist',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MywishlistComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myWishlistService: MyWishlistService) {
+
+    console.log("constructor .. ");
+   }
 
   ngOnInit(): void {
+    console.log("Initialized .. ");
+    this.myWishlistService.getEventById('c1413b13-7902-46f8-941d-b2e4a307fa55');
+
+    
   }
 
 }
